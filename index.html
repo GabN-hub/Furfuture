@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bafe0bdc31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Furfuture</title>
+  </head>
+  <body>
+    <div class="vh1">
+      <nav class="nav-container flex justify-between items-center py-3 lg:py-6">
+        <div class="logo flex ml-7 lg:ml-28">
+          <img src="img/logo.svg" alt="logo of Furfuture" />
+          <a href="#"><h2 class="titles ml-2.5 text-4xl">Furfuture</h2></a>
+        </div>
+        <!-- hamburger menu for mobile and tablet -->
+        <div id="dropdown" class="relative cursor-pointer lg:hidden">
+          <i class="fa-solid fa-bars fa-lg mx-7"></i>
+          <div id="popup" class="hidden bg-gray-50 absolute right-0 w-35 py-2 px-2 mt-2">
+            <a href="#about" class="dropdown-item">About Us</a>
+            <a href="#portfolio" class="dropdown-item">Portfolio</a>
+            <a href="#feedback" class="dropdown-item">Feedback</a>
+            <a href="#" class="dropdown-item">Login</a>
+          </div>
+        </div>
+        <!-- navbar for larger screens -->
+        <div class="nav-links hidden lg:inline">
+          <a href="#about" class="underline-middle">About Us</a>
+          <a href="#portfolio" class="mx-8 underline-middle">Portfolio</a>
+          <a href="#feedback" class="underline-middle">Feedback</a>
+        </div>
+        <div class="login hidden lg:inline lg:mr-28">
+          <a href="#" class="poppins text-lg font-semibold px-9 py-3">Login</a>
+        </div>
+      </nav>
+      <section class="hero-container flex flex-col lg:flex-row lg:mt-11">
+        <!-- hero text (hero1)-->
+        <div class="hero1 flex flex-col flex-wrap items-center lg:items-start lg:mx-28 lg:justify-around lg:pr-8">
+          <div class="hero-content text-center px-10 mt-10 lg:mt-0 lg:px-0 lg:text-left">
+            <h1 class="titles text-5xl lg:text-7xl">High Quality Furniture</h1>
+            <p class="content mt-3 lg:text-xl">Find an elegant and luxurious interior designed by a professional interior designer</p>
+          </div>
+          <div class="buttons flex py-2.5 px-9 my-10">
+            <img src="img/arrow-up-right.svg" alt="upright arrow" />
+            <a href="#" class="ml-2 lg:text-lg">Our Shop</a>
+          </div>
+          <div class="plus flex">
+            <div class="pr-8 pl-3">
+              <h2 class="titles text-4xl lg:text-5xl">420+</h2>
+              <p class="content">Project Finished</p>
+            </div>
+            <div class="px-8">
+              <h2 class="titles text-4xl lg:text-5xl">150+</h2>
+              <p class="content">Unique Assortment</p>
+            </div>
+            <div class="pl-8 pr-3 lg:pr-0">
+              <h2 class="titles text-4xl lg:text-5xl lg:pr-3">80+</h2>
+              <p class="content">Across the country</p>
+            </div>
+          </div>
+        </div>
+        <!-- hero images (hero2) -->
+        <div class="hero2 flex mx-3 mt-10 lg:mt-0 lg:mx-0">
+          <div class="lg:w-2/3">
+            <img src="img/hero-1.jpg" alt="" class="object-cover h-full w-full" />
+          </div>
+          <div class="mx-2 lg:mx-7 lg:w-1/3">
+            <img src="img/hero-2.jpg" alt="" class="object-cover h-full w-full" />
+          </div>
+          <div class="lg:w-1/6">
+            <img src="img/hero-3.jpg" alt="" class="object-cover h-full w-full" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about" class="about-container flex flex-col lg:flex-row">
+      <!-- about text (about1) -->
+      <div class="about1 text-center px-10 mb-10 lg:px-0 lg:w-1/2 lg:ml-24 lg:mb-0 lg:text-left lg:py-4 relative overflow-hidden">
+        <h3 class="heading text-xl font-semibold">ABOUT US</h3>
+        <h1 class="titles text-4xl my-5 lg:text-5xl lg:my-0 lg:mb-5 lg:pr-28">we provide you the best experience</h1>
+        <p class="content text-left lg:pr-28">We are a company that focuses on the furniture sector that has been established for 20 years. we are located in the us with 100 branches in various regions.</p>
+        <br />
+        <p class="content text-left lg:pr-28">We provide various types of furniture of the highest quality, of course with good service and other conveniences</p>
+        <div class="diamond hidden lg:block lg:max-w-510">
+          <img src="img/diamonds.svg" alt="diamonds" />
+        </div>
+      </div>
+      <!-- about images (about2) -->
+      <div class="about2 flex px-10 lg:px-0 lg:ml-28 lg:w-1/2 lg:order-first lg:overflow-hidden">
+        <div class="w-2/3 relative bottom-[-100px]">
+          <img src="img/about.jpg" alt="yellow chair" class="object-cover h-full w-full" />
+        </div>
+        <div class="w-1/3 ml-6 mb-10"></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-container flex flex-col">
+      <!-- portfolio text (portfolio1)-->
+      <div class="portfolio1 px-10 mb-10 lg:px-0 text-center">
+        <h3 class="heading text-xl font-semibold">PORTFOLIO</h3>
+        <h1 class="titles text-4xl my-5 lg:text-5xl lg:my-0 lg:mb-10">420+ Completed Project</h1>
+        <p class="content">See our portfolio to make sure how quality we are in choosing furniture</p>
+      </div>
+      <!-- portfolio carousel (flickity)-->
+      <div class="carousel lg:mx-28 relative" data-flickity='{ "adaptiveHeight": true, "autoPlay": true, "freeScroll": true}'>
+        <div class="carousel-cell">
+          <div>
+            <p class="carousel-txt text-lg lg:text-4xl">View of co-working space family room</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <p class="carousel-txt text-lg lg:text-4xl">View of a Scandinavian dining room</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <p class="carousel-txt text-lg lg:text-4xl">View of a rustic bedroom</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <p class="carousel-txt text-lg lg:text-4xl">View of a modern home office</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <p class="carousel-txt text-lg lg:text-4xl">View of a chic living room</p>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle hidden xl:absolute xl:block"></div>
+    </section>
+
+    <section id="feedback" class="feedback-container flex flex-col">
+      <!-- feedback text (feedback1) -->
+      <div class="feedback1 text-center px-10 lg:px-0 lg:mb-0">
+        <h3 class="heading text-xl font-semibold my-5">FEEDBACK</h3>
+        <h1 class="titles text-4xl lg:mb-16">What do our customers say?</h1>
+      </div>
+      <div class="carousel second-carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": false }'>
+        <div class="feedback-cell">
+          <div class="head flex gap-5 items-center xl:gap-16">
+            <div>
+              <img src="img/feedback/feedback1.jpg" class="rounded-full w-20 h-20 xl:w-40 xl:h-40" alt="picture of feedback" />
+            </div>
+            <div class="stars_name flex flex-col">
+              <div class="stars flex mx-auto">
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+              </div>
+              <p class="name text-xl mt-3 text-center xl:text-4xl">Derinote Slaiya R.</p>
+            </div>
+          </div>
+          <div class="review mt-10">
+            <p class="content xl:text-xl">
+              "I recently purchased a dining set from Furfuture, and I couldn't be happier with my purchase. The quality of the furniture is exceptional, and the design perfectly matches my modern interior. I highly recommend Furfuture for anyone looking for stylish and high-quality furniture."
+            </p>
+          </div>
+        </div>
+        <div class="feedback-cell">
+          <div class="head flex gap-5 items-center xl:gap-16">
+            <div>
+              <img src="img/feedback/feedback2.jpg" class="rounded-full w-20 h-20 xl:w-40 xl:h-40" alt="picture of feedback" />
+            </div>
+            <div class="stars_name flex flex-col">
+              <div class="stars flex mx-auto">
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+              </div>
+              <p class="name text-xl mt-3 text-center xl:text-4xl">Jonathan Raimon</p>
+            </div>
+          </div>
+          <div class="review mt-10">
+            <p class="content xl:text-xl">
+              "Furfuture has a decent selection of products, but the overall quality and durability of the furniture could be better. While the prices are reasonable, there were some issues with customer service, including delays in delivery and lack of responsiveness."
+            </p>
+          </div>
+        </div>
+        <div class="feedback-cell">
+          <div class="head flex gap-5 items-center xl:gap-16">
+            <div>
+              <img src="img/feedback/feedback3.jpg" class="rounded-full w-20 h-20 xl:w-40 xl:h-40" alt="picture of feedback" />
+            </div>
+            <div class="stars_name flex flex-col">
+              <div class="stars flex mx-auto">
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" style="color: #ff6b18"></i>
+              </div>
+              <p class="name text-xl mt-3 text-center xl:text-4xl">Emily Thompson</p>
+            </div>
+          </div>
+          <div class="review mt-10">
+            <p class="content xl:text-xl">"I recently visited Furfuture, and I must say it was an exceptional experience. The quality of the products is top-notch, and the variety of styles available is impressive."</p>
+          </div>
+        </div>
+        <div class="feedback-cell">
+          <div class="head flex gap-5 items-center xl:gap-16">
+            <div>
+              <img src="img/feedback/feedback4.jpg" class="rounded-full w-20 h-20 xl:w-40 xl:h-40" alt="picture of feedback" />
+            </div>
+            <div class="stars_name flex flex-col">
+              <div class="stars flex mx-auto">
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+              </div>
+              <p class="name text-xl mt-3 text-center xl:text-4xl">Michael Davis</p>
+            </div>
+          </div>
+          <div class="review mt-10">
+            <p class="content xl:text-xl">
+              "Furfuture offers a diverse selection of stylish and trendy furniture pieces. The quality of the products is impressive, and they are built to last. The staff is friendly and attentive, providing helpful guidance during the selection process. Although prices are slightly on the higher
+              side, the overall experience justifies the investment."
+            </p>
+          </div>
+        </div>
+        <div class="feedback-cell">
+          <div class="head flex gap-5 items-center xl:gap-16">
+            <div>
+              <img src="img/feedback/feedback5.jpg" class="rounded-full w-20 h-20 xl:w-40 xl:h-40" alt="picture of feedback" />
+            </div>
+            <div class="stars_name flex flex-col">
+              <div class="stars flex mx-auto">
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+                <i class="fa-solid fa-star xl:mr-3 text-lg xl:text-4xl" alt="picture of feedback" style="color: #ff6b18"></i>
+              </div>
+              <p class="name text-xl mt-3 text-center xl:text-4xl">Olivia Johnson</p>
+            </div>
+          </div>
+          <div class="review mt-10">
+            <p class="content xl:text-xl">
+              "I couldn't be happier with my purchase from Furfuture. The quality of their furniture is outstanding, and the craftsmanship is impeccable. The entire process, from selecting the pieces to the delivery, was seamless. The staff was professional and went above and beyond to ensure my
+              satisfaction."
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-container mt-auto flex flex-wrap justify-around px-7 py-3 lg:px-28 lg:py-6">
+        <div class="footer1 flex flex-col py-3">
+          <div class="logo flex">
+            <img src="img/logo.svg" alt="logo of Furfuture" />
+            <a href="#"><h2 class="titles ml-2.5 text-4xl">Furfuture</h2></a>
+          </div>
+          <p class="content mt-4">Furfuture is a shop that focuses on selling furniture, we were founded in 2015</p>
+        </div>
+        <div class="footer2 content flex flex-col py-3">
+          <p class="footer-title font-semibold">Navigation</p>
+          <a href="#about" class="content">About Us</a>
+          <a href="#portfolio" class="content">Portfolio</a>
+          <a href="#feedback" class="content">Feedback</a>
+        </div>
+        <div class="footer3 content flex flex-col py-3">
+          <p class="footer-title font-semibold">Learn More</p>
+          <a href="#" class="content">Terms Of Use</a>
+          <a href="#" class="content">Privacy & Policy</a>
+          <a href="#" class="content">FAQ</a>
+        </div>
+        <div class="footer4 content flex flex-col py-3">
+          <p class="footer-title font-semibold">Newsletter</p>
+          <p class="content">Don't miss the latest information on this platform</p>
+          <div class="newsletter flex items-center">
+            <input type="email" name="email" id="email" placeholder="Email Address" class="px-5 py-4" />
+            <div class="arrow p-3 flex items-center justify-center">
+              <img src="img/send.svg" alt="send button" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      const dropdown = document.getElementById("dropdown");
+      const popup = document.getElementById("popup");
+
+      dropdown.addEventListener("click", function () {
+        popup.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
