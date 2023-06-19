@@ -207,6 +207,13 @@
     bottom: -190%;
   }
 }
+@media (min-width: 2000px) {
+  .rectangle {
+    right: 8%;
+    left: 68%;
+    bottom: -193%;
+  }
+}
 
 .carousel-cell:nth-child(1) {
   background-image: url(img/portfolio/family-room1.jpg);
