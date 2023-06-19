@@ -200,7 +200,7 @@
     bottom: -198%;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1900px) {
   .rectangle {
     right: 10%;
     left: 68%;
